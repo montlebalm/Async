@@ -82,4 +82,20 @@ public class Async {
     }
   }
 
+  internal class func _detect<I>(
+    items: [I],
+    complete: (NSError?, I) -> (),
+    iterator: (I, (NSError?, Bool) -> ()) -> ()
+  ) {
+    var ctr = 0
+
+    for item in items {
+      iterator(item) { (err: NSError?, passed: Bool) -> () in
+        if err != nil || passed {
+          complete(err, item)
+        }
+      }
+    }
+  }
+
 }
