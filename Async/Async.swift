@@ -23,15 +23,16 @@ public class Async {
     complete: ([I]) -> (),
     iterator: (I, (Bool) -> ()) -> ()
   ) {
-    var ongoing: [(index: Int, passed: Bool)] = []
+    var ongoing = [Int: Bool]()
 
     for (i, item) in enumerate(items) {
       iterator(item) { passed in
-        ongoing.append((index: i, passed: passed))
+        ongoing[i] = passed
 
         if ongoing.count == items.count {
-          let results = ongoing
-            .filter({ $0.passed })
+          let results = Array(ongoing.keys)
+            .map({ (index: $0, passed: ongoing[$0]!) })
+            .filter({ $0.1 })
             .sorted({ $0.index < $1.index })
             .map({ items[$0.index] })
           complete(results)
@@ -45,14 +46,16 @@ public class Async {
     complete: (NSError?, [O]) -> (),
     iterator: (I, (NSError?, O) -> ()) -> ()
   ) {
-    var ongoing: [(Int, O)] = []
+    var ongoing = [Int: O]()
 
     for (i, item) in enumerate(items) {
       iterator(items[i]) { err, result in
-        ongoing.append((i, result))
+        ongoing[i] = result
 
         if err != nil || ongoing.count == items.count {
-          let results = ongoing.sorted({ $0.0 < $1.0 }).map({ $0.1 })
+          let results = Array(ongoing.keys)
+            .map({ (index: $0, passed: ongoing[$0]!) })
+            .sorted({ $0.0 < $1.0 }).map({ $0.1 })
           complete(err, results)
         }
       }
