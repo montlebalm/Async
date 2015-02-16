@@ -2,6 +2,12 @@ import Foundation
 
 extension Async {
 
+  /**
+    Returns the first value that passes an async truth test
+    :param: items the values to be tested
+    :param: iterator the test function
+    :param: complete the completion callback
+  */
   class func detect<I>(
     items: [I],
     iterator: (I, (NSError?, Bool) -> ()) -> (),
