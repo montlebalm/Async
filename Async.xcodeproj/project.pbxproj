@@ -51,6 +51,9 @@
 		5CC7D7C91A91B3B100A3BF70 /* detect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC7D7C81A91B3B100A3BF70 /* detect.swift */; };
 		5CC7D7CA1A91B3B600A3BF70 /* detect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC7D7C81A91B3B100A3BF70 /* detect.swift */; };
 		5CC7D7CC1A91B3BF00A3BF70 /* DetectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC7D7CB1A91B3BF00A3BF70 /* DetectTests.swift */; };
+		5CC7D7CE1A91B7E200A3BF70 /* detectSeries.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC7D7CD1A91B7E200A3BF70 /* detectSeries.swift */; };
+		5CC7D7CF1A91B7E200A3BF70 /* detectSeries.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC7D7CD1A91B7E200A3BF70 /* detectSeries.swift */; };
+		5CC7D7D11A91B7F400A3BF70 /* DetectSeriesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC7D7D01A91B7F400A3BF70 /* DetectSeriesTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -97,6 +100,8 @@
 		5CC7D7AC1A91ABC100A3BF70 /* WaterfallTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WaterfallTests.swift; sourceTree = "<group>"; };
 		5CC7D7C81A91B3B100A3BF70 /* detect.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = detect.swift; sourceTree = "<group>"; };
 		5CC7D7CB1A91B3BF00A3BF70 /* DetectTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetectTests.swift; sourceTree = "<group>"; };
+		5CC7D7CD1A91B7E200A3BF70 /* detectSeries.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = detectSeries.swift; sourceTree = "<group>"; };
+		5CC7D7D01A91B7F400A3BF70 /* DetectSeriesTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetectSeriesTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,6 +146,7 @@
 			children = (
 				5CC7D7861A91ABAB00A3BF70 /* Async.swift */,
 				5CC7D7C81A91B3B100A3BF70 /* detect.swift */,
+				5CC7D7CD1A91B7E200A3BF70 /* detectSeries.swift */,
 				5CC7D7871A91ABAB00A3BF70 /* each.swift */,
 				5CC7D7881A91ABAB00A3BF70 /* eachLimit.swift */,
 				5CC7D7891A91ABAB00A3BF70 /* eachSeries.swift */,
@@ -171,6 +177,7 @@
 			isa = PBXGroup;
 			children = (
 				5CC7D7CB1A91B3BF00A3BF70 /* DetectTests.swift */,
+				5CC7D7D01A91B7F400A3BF70 /* DetectSeriesTests.swift */,
 				5CC7D7A11A91ABC100A3BF70 /* EachLimitTests.swift */,
 				5CC7D7A21A91ABC100A3BF70 /* EachSeriesTests.swift */,
 				5CC7D7A31A91ABC100A3BF70 /* EachTests.swift */,
@@ -316,6 +323,7 @@
 				5CC7D7991A91ABAB00A3BF70 /* map.swift in Sources */,
 				5CC7D7C91A91B3B100A3BF70 /* detect.swift in Sources */,
 				5CC7D7981A91ABAB00A3BF70 /* filterSeries.swift in Sources */,
+				5CC7D7CE1A91B7E200A3BF70 /* detectSeries.swift in Sources */,
 				5CC7D7941A91ABAB00A3BF70 /* each.swift in Sources */,
 				5CC7D79A1A91ABAB00A3BF70 /* mapSeries.swift in Sources */,
 				5CC7D79F1A91ABAB00A3BF70 /* waterfall.swift in Sources */,
@@ -346,6 +354,7 @@
 				5CC7D7C41A91ABC800A3BF70 /* reduceRight.swift in Sources */,
 				5CC7D7B01A91ABC100A3BF70 /* EachTests.swift in Sources */,
 				5CC7D7BB1A91ABC800A3BF70 /* each.swift in Sources */,
+				5CC7D7D11A91B7F400A3BF70 /* DetectSeriesTests.swift in Sources */,
 				5CC7D7BC1A91ABC800A3BF70 /* eachLimit.swift in Sources */,
 				5CC7D7C31A91ABC800A3BF70 /* reduce.swift in Sources */,
 				5CC7D7BE1A91ABC800A3BF70 /* filter.swift in Sources */,
@@ -354,6 +363,7 @@
 				5CC7D7BA1A91ABC800A3BF70 /* Async.swift in Sources */,
 				5CC7D7C61A91ABC800A3BF70 /* waterfall.swift in Sources */,
 				5CC7D7AF1A91ABC100A3BF70 /* EachSeriesTests.swift in Sources */,
+				5CC7D7CF1A91B7E200A3BF70 /* detectSeries.swift in Sources */,
 				5CC7D7B51A91ABC100A3BF70 /* ParallelTests.swift in Sources */,
 				5CC7D7CA1A91B3B600A3BF70 /* detect.swift in Sources */,
 				5CC7D7B31A91ABC100A3BF70 /* MapSeriesTests.swift in Sources */,
